@@ -1,13 +1,13 @@
 radio-player-project/
 ├── src/
-│   ├── main.py                # Hauptdatei zum Starten der Anwendung
-│   ├── player.py              # Steuerung des Radio-Streams, Pufferung, und Audio-Wiedergabe
-│   ├── metadata_handler.py    # Extrahiert und verarbeitet Song- und Albumdaten aus dem Stream
-│   ├── ad_detector.py         # Erkennung von Werbung im Stream
-│   ├── music_info_api.py      # API-Abfragen für Song- und Albuminformationen (z. B. Last.fm oder Spotify)
-│   ├── spotify_handler.py     # Neues Modul für Spotify-API und Playlist-Verwaltung
-│   ├── gui.py                 # Benutzeroberfläche (GUI) mit Anzeige von Songinformationen und Steuerelementen
-│   └── config.py              # Konfigurationsdatei für API-Schlüssel, URLs und Einstellungen
-├── requirements.txt           # Abhängigkeiten des Projekts
-├── README.md                  # Projektbeschreibung und Dokumentation
-└── LICENSE                    # Lizenz des Projekts
+│   ├── main.py                # Main file to start the application
+│   ├── player.py              # Controls the radio stream, buffering, and audio playback
+│   ├── metadata_handler.py    # Extracts and processes song and album data from the stream
+│   ├── ad_detector.py         # Detects advertisements in the stream
+│   ├── music_info_api.py      # API calls for song and album information (e.g. Last.fm or Spotify)
+│   ├── spotify_handler.py     # New module for Spotify API and playlist management
+│   ├── gui.py                 # User interface (GUI) with song information display and controls
+│   └── config.py              # Configuration file for API keys, URLs, and settings
+├── requirements.txt           # Project dependencies
+├── README.md                  # Project description and documentation
+└── LICENSE                    # Project license
