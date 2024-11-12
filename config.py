@@ -1,6 +1,6 @@
-# src/config.py
+import os
 
-AUDD_API_KEY = '1c264e1c9a72bcbd2ec2387451892aac'
+my_secret = os.environ['AUDD_API_KEY']
 
 # URL der Radio-Streams
 STREAMS = {

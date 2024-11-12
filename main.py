@@ -1,4 +1,4 @@
-import tkinter as tk  # Stelle sicher, dass tkinter importiert wird
+import tkinter as tk  # Stellt sicher, dass tkinter importiert wird
 from player import RadioPlayer
 from gui import RadioPlayerGUI
 from config import STREAMS, AUDD_API_KEY  # Hier importieren wir die STREAMS und den API-Schlüssel
