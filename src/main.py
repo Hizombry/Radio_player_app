@@ -1,7 +1,7 @@
 import tkinter as tk  # Stellt sicher, dass tkinter importiert wird
 from player import RadioPlayer
 from gui import RadioPlayerGUI
-from config import STREAMS, AUDD_API_KEY  # Hier importieren wir die STREAMS und den API-Schlüssel
+from config import STREAMS, my_secret  # Hier importieren wir die STREAMS und den API-Schlüssel
 
 def main():
     print("Initialisiere GUI und Komponenten")  # Debug-Ausgabe
@@ -15,7 +15,7 @@ def main():
     radio_player = RadioPlayer(default_stream_url)
 
     # Erstelle GUI und verbinde die Module
-    app = RadioPlayerGUI(root, radio_player, AUDD_API_KEY)
+    app = RadioPlayerGUI(root, radio_player, my_secret)
 
     # Starte die GUI
     root.mainloop()

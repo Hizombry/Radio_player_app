@@ -1,8 +1,9 @@
+entrypoint = "src/main.py"
+
 modules = ["python-3.12"]
-run = "entrypoint = \"main.py\""
 
 [nix]
 channel = "stable-24_05"
 
 [deployment]
-run = ["sh", "-c", "entrypoint = \"main.py\""]
+run = ["sh", "-c", "python src/main.py"]

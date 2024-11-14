@@ -1,5 +1,5 @@
 import requests
-from config import AUDD_API_KEY  # Stelle sicher, dass dieser Schlüssel in config.py definiert ist
+from config import my_secret  # Stelle sicher, dass dieser Schlüssel in config.py definiert ist
 
 class MusicInfoAPI:
     def __init__(self, api_key):
@@ -24,7 +24,7 @@ class MusicInfoAPI:
 
 # Beispiel für die Verwendung der API
 if __name__ == "__main__":
-    api = MusicInfoAPI(AUDD_API_KEY)
+    api = MusicInfoAPI(my_secret)
     song_info = api.recognize_song("path_to_your_audio_file.wav")  # Ersetze dies mit einer gültigen Datei
     if song_info:
         print(song_info)

@@ -34,11 +34,13 @@ if missing_packages:
     print("\nInstalliere fehlende Pakete mit:")
     print("pip install " + " ".join(missing_packages))
 
-    # Optional: Automatische Installation der fehlenden Pakete
+    # Automatische Installation der fehlenden Pakete
     user_input = input("\nMöchtest du die fehlenden Pakete automatisch installieren? (y/n): ")
     if user_input.lower() == 'y':
         try:
+            # Use pip to install the missing packages
             subprocess.check_call([sys.executable, "-m", "pip", "install"] + missing_packages)
+            print("Pakete erfolgreich installiert.")
         except subprocess.CalledProcessError as e:
             print(f"Fehler beim Installieren der Pakete: {e}")
 else:
